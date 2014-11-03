@@ -4,7 +4,7 @@ Theme words: **Panda, Explosion, Timetravel**
 
 ![Panda Replay][2]
 
-In this puzzle / platformer game, you control a panda. The goal is to collect the yellow token to advance to the next stage. The panda can push the light brown crates and bombs, but can not be blown up by bomb. The panda has the ability to "time travel". Time travelling allows the panda to maintain his current position on the map while "resetting" the puzzle to what it was in the beginning. He can only time travel a limited number of times per stage.
+In this puzzle / platformer game, you control a panda. The goal is to collect the yellow token to advance to the next stage. The panda can push the light brown crates and bombs, but can not be blown up by the bomb. The panda has the ability to "time travel". Time travelling allows the panda to maintain his current position on the map while "resetting" the puzzle to what it was in the beginning, allowing him to perform actions that were previously not possible. He can only time travel a limited number of times per stage.
 
 Gameplay
 -------
