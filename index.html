@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="lib/phaser.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="src/boot.js"></script>
+    <script src="src/stageloader.js"></script>
+    <script src="src/game.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        canvas {
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:#eee">
+    <div align="center">
+        <h1>Panda Replay</h1>
+    </div>
+
+    <script type="text/javascript">
+        function boot() {
+            game = new Phaser.Game(800, 600);
+            game.parent = "panda-run";
+            game.state.add('boot', Main.Boot, true);
+            game.state.add('stageloader', Main.StageLoader);
+            game.state.add('game', Main.Game);
+
+        }
+
+        window.onload = function () {
+            boot();
+        }
+    </script>
+
+
+    <div id="panda-run"></div>
+    <div align="center">
+        <p><b>Panda Replay</b> is created by <a href="http://www.kendaldev.com/" target="_blank"><b>Kendal Agbanlog</b></a> for <a target="_blank" href="http://meta.gamedev.stackexchange.com/questions/1794/anniversary-game-jam-2014">GDSE Anniversary Game Jam 2014</a> 
+        </p>
+        <p>Use the arrow keys to move the panda around. Press spacebar or the up key to jump. The 'T' key will cause the panda to time travel. The goal is to collect the yellow 'G' token. Additional instructions are below.
+        </p>
+    </div>
+
+    <br/>
+
+    <div align="center">
+        <img src="assets/info.jpg" />
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-54994206-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>

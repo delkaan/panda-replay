@@ -1,0 +1,27 @@
+[{
+    "bombs": [
+        {
+            "x": 50,
+            "y": 170,
+            "timer": 4
+            }
+             ],
+
+    "crates": [{
+            "x": 100,
+            "y": 40,
+            "immovable": false
+            },
+
+        {
+            "x": 235,
+            "y": 300,
+            "immovable": true
+            }
+                    ],
+    "playerx": 50,
+    "playery": 50,
+    "goalx": 50,
+    "goaly": 330,
+    "resets": 1
+}]
